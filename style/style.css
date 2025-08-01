@@ -1,0 +1,37 @@
+:root {
+    --primary-color: #ffffff;
+    --secundary-color: #C0C0C0;
+    --tertiary-color: #167BF7;
+    --background-color: #00030C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 1px solid red;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.home {
+    background-image: url(/assets/img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain; /*preenche todo o container com a imagem*/
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%
+}
+
+.container__button {
+    background-color: var(--tertiary-color);
+    border-radius: 6px;
+    padding: 1em; /*Captura o tamanho da fonte*/
+    color: var(--primary-color);
+    display: block;
+}
