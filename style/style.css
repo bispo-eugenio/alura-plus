@@ -25,6 +25,8 @@ body {
     background-image: url(/assets/img/Background.png);
     background-repeat: no-repeat;
     background-size: contain; /*preenche todo o container com a imagem*/
+    align-items: center;
+    text-align: center;
 }
 
 .container {
@@ -33,8 +35,16 @@ body {
     grid-template-columns: 50% 50%
 }
 
+.container__box {
+    margin: 0 6em;
+}
+
 .container__title {
     font-size: 1.75rem;
+}
+
+.container__image {
+    margin: 1em 0 2em; /*16px 32px -> pegando valores padrões do root*/
 }
 
 .container__button {
@@ -44,6 +54,7 @@ body {
     color: var(--primary-color);
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
