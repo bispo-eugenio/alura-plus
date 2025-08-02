@@ -32,7 +32,7 @@ body {
 .container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 50% 50%
+    grid-template-columns: 50% 50%;
 }
 
 .container__box {
@@ -57,12 +57,41 @@ body {
     margin-bottom: 1em;
 }
 
-.botao_secundario {
+.secundary__button {
     background-color: transparent;
     border: 2px solid var(--primary-color);
 }
 
-.container__aviso {
+.container__info  {
     font-size: 0.75rem;
+    color: var(--secundary-color);
+}
+
+.secundary {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundary__image {
+    width: 80%;
+}
+
+.secundary_secundary-button {
+    display: inline-block; /*transforma o elemento em linha + quebra de linha*/
+    margin-top: 1em;
+}
+
+.container__describe {
+    padding: 2em;
+}
+
+.describe__title {
+    font-weight: 700;
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 0.1em;
+}
+
+.describe__text {
     color: var(--secundary-color);
 }
