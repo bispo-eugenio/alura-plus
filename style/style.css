@@ -10,7 +10,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px solid red; */
 }
 
 body {
@@ -144,4 +143,31 @@ body {
 
 .footer-container__list a:active {
     color: var(--secundary-color);
+}
+
+/*Media sceen -> */
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+        background-image: none;
+    }
+    .container__image {
+        width: 49vw;
+    }
+    .container__box {
+        margin: 2em;
+    }
+
+    .secundary {
+        margin: 0;
+        text-align: center; /*Funciona com elemento inline*/
+    }
+
+    .plataforms__list {
+        flex-direction: column;
+    }
+
+    .footer-container__list {
+        flex-direction: column;
+    }
 }
